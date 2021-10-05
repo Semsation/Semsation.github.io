@@ -1,11 +1,11 @@
 @font-face {
-	font-family: 'Thintel Regular';
-	src: url('assorts/Thintel.ttf');
+	font-family: 'Lexipa';
+	src: url("assorts/LEXIPA__.TTF");
   }
 
 body {
 	background-color: #000000;
-	font-family: 'Thintel Regular';
+	font-family: 'Lexipa';
 }
 
 a, a:hover, a:focus, a:active {
@@ -18,13 +18,60 @@ h1:hover, a:hover {
 	color: rgb(255, 97, 163);
   }
 
-#centerText {
-	font-size: 25px;
-	width: 250px;
-	height: 200px;	
+#blanket {
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
 }
 
-#myVideo {
+#Box {
+	position: fixed;
+	background-color: rgb(0, 0, 0);
+	border: 2px solid rgb(255, 122, 195);
+	width: 450px;
+	height: 250px;
+	top: 50%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+}
+
+#BoxImg {
+	position: absolute;
+	border: 2px solid rgb(255, 122, 195);
+	right: 0;
+	left: 10px;
+	bottom: 35px;
+	width: 200px;
+	height: 200px;
+}
+
+#BoxText {
+	position: absolute;
+	left: 130px;
+	right: 0px;
+	bottom: 35px;
+	width: 400px;
+	height: 200px;
+}
+
+#unn {
+	position: absolute;
+	font-size: smaller;
+	left: 25px;
+	right: 0px;
+	bottom: 10px;
+	width: 180px;
+	height: 20px;
+}
+
+#vid {
 	width: 100vw;
 	height: 100vh;
 	object-fit: cover;
