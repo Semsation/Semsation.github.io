@@ -1,89 +1,39 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8" />
-		<title>(´・ω・`)</title>
-		<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
-		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-		<link rel="stylesheet" type="text/css" href="style.css"/>
-        	<script type="text/javascript">
-			function show( show1 ) {
-			  document.getElementById(show1).style.display="block";
-			}
-			function hide( hide1 ) {
-			  document.getElementById(hide1).style.display="none";
-			}
-			function tog( tog1 ) {
-			  document.getElementById(tog1).style.backgroundColor="#777777";
-			}
-			function toh( toh1 ) {
-			  document.getElementById(toh1).style.backgroundColor="#ffffff";
-			}
-		</script>
-	</head>
-	<body>
-		<div class="maincontainer">
-			<div class="bottomcontainer">
-				<div class="button" id="btn1" onclick = "show('main1');hide('main2');tog('btn1');toh('btn2');"></div>
-				<div class="button" id="btn2" onclick = "show('main2');hide('main1');tog('btn2');toh('btn1');"></div>
-				<div class="marqueebar" id="marqueebar">
-					<marquee id="news1" class="marquee2"></marquee>
-				</div>
-			</div>
-			<div class="time" id="time">
-				<script>
-					//document.getElementById("main").innerHTML = Date();
-					function updateClock() {
-						var days = ['SUNDAY','MONDAY','TUESDAY','WEDNESDAY','THURSDAY','FRIDAY','SATURDAY'];
-						var m = new Date();
-						var dateString =
-						  (days[ m.getDay() ]) + " " +
-						  ("0" + (m.getMonth()+1)).slice(-2) +"/"+
-						  ("0" + m.getDate()).slice(-2) + "/" +
-						  m.getFullYear() +" "+
-						  ("0" + m.getHours()).slice(-2) + ":" +
-						  ("0" + m.getMinutes()).slice(-2) + ":" +
-						  ("0" + m.getSeconds()).slice(-2);
-						
-						// set the content of the element with the ID time to the formatted string
-						document.getElementById('time').innerHTML = dateString;
+	<script src="js.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<video autoplay muted loop id="myVideo">
+		<source src="kyoto_excer_pt.mp4" type="video/mp4">
+  	</video>
 
-						// call this function again in 1000ms
-						setTimeout(updateClock, 1000);
-					}
-					updateClock(); // initial call
-				</script>
+<!-- dont look at this D: --->
+
+	</head>
+		<body>
+		<center>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<div id="centerText" style="color:rgb(255, 255, 255);">Hello<br>
+				<p>idk how to make websites</p>
+				<p><a href="steam://friends/add/76561197969921112">hmu on steam</a></p>
+				<p><a href="https://www.youtube.com/watch?v=pX1FwGeaCnA">I like this song</a></p>
+				<p><a href="https://www.yyyyyyy.info/">y20k�</a></p>
+				<br>
+				<br>
+				<img src="neco.png" alt="cat" width="100" height="100">
 			</div>
-			<div class="main" id="main1">
-				<div class="sidebar" style="background-image: url(img/snoopdance5.gif);"></div>
-				<div class="welcome">オイ</div>
-				<div class="bookmarkscontainer">
-					<ul>
-						<li><a href="http://4chan.org/wg/" class="clink" target="_blank">/wg/</a>
-                        <li><a href="http://4chan.org/g/" class="clink" target="_blank">/g/</a>
-						<li><a href="http://4chan.org/f/" class="clink" target="_blank">/f/</a>
-					</ul>
-					<ul>
-						<li><a href="http://gmail.com" class="clink" target="_blank">gmail</a>
-                        <li><a href="http://twitter.com" class="clink" target="_blank">twitter</a>
-						<li><a href="http://youtube.com" class="clink" target="_blank">youtube</a>
-						<li><a href="http://soundcloud.com" class="clink" target="_blank">soundcloud</a>
-					</ul>
-					<ul>
-						<li><a href="http://github.com" class="clink" target="_blank">github</a>
-						<li><a href="https://mega.nz/" class="clink" target="_blank">mega</a>
-						<li><a href="https://cytu.be/" class="clink" target="_blank">cytube</a>
-					</ul>
-					<ul>
-						<li><a href="https://www1.9anime.to/" class="clink" target="_blank">9anime</a>
-						<li><a href="https://solarmoviez.ru/" class="clink" target="_blank">solarmoviez</a>
-						<li><a href="https://www.torlock.com/" class="clink" target="_blank">torlock</a>
-					</ul>
-				</div>
-			</div>
-			<div class="main" id="main2" style="display:none">
-				<div class="sidebar" style="background-image: url(img/1.gif);"></div>	
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_yaoElS_iNE" frameborder="0" allowfullscreen></iframe>
-			</div>
-		</div>
-	</body>
+		</center>
+
+		</body>
 </html>
